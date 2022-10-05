@@ -12,6 +12,9 @@ for (let i = 0; i < navItem.length; i++) {
     fetchURL(url);
   };
 }
+if(localStorage.getItem("username") == null){
+  window.location.href = "index.html";  
+}
 // welcome
  welcome.innerText = `Welcom ${localStorage.getItem("username")}`
 // logout
