@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-item{
+    @apply cursor-pointer;
+}
+.active{
+    @apply bg-slate-800;
+}
+.registration{
+    @apply border mx-auto w-7/12 rounded-md overflow-hidden;
+}
+.nav-tab{
+    @apply flex bg-slate-700 justify-evenly cursor-pointer border-b-2 text-center;
+}
+.nav-tab p{
+    @apply w-1/2 py-2;
+}
+.form-input{
+    @apply bg-transparent border w-full p-2 rounded-md focus-visible:outline-none;
+}
+.btn-submit{
+    @apply border py-1 px-10 mb-6 rounded-md transition-colors block mx-auto  hover:bg-slate-800;
+}
+.row{
+    @apply flex flex-wrap;
+}
+.col-8{
+    @apply w-3/4 p-1;
+}
+.col-4{
+    
+    @apply lg:w-1/3 md:w-1/2 p-1;
+}
+.col-3{
+    
+    @apply w-1/4 p-1;
+}
+.card-media{
+  @apply  w-full object-cover h-64;
+}
